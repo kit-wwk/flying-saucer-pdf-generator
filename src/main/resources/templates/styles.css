@@ -1,0 +1,18 @@
+*{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@page  {
+    size: A4;
+    margin: 1cm;
+
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+    }
+}
+
+img{
+    width: 190mm;
+}
